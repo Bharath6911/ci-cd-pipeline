@@ -11,6 +11,9 @@ The goal was to understand real-world deployment workflows, automation, and cont
 
 ## Files structure
 
+
+
+
 ci-cd-pipeline/
 ├── .github/
 │   └── workflows/
@@ -23,6 +26,10 @@ ci-cd-pipeline/
     ├── Dockerfile
     ├── app.py
     └── requirements.txt
+
+
+
+
 
 ---
 
