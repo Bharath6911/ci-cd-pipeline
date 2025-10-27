@@ -144,5 +144,3 @@ This ensured all Docker configurations and pipeline scripts worked before cloud 
 * Extend CI/CD to Kubernetes clusters for high availability.
 
 ---
-
-**Author:** Bharath
