@@ -11,25 +11,21 @@ The goal was to understand real-world deployment workflows, automation, and cont
 
 ## Files structure
 
-
-
-
+```
 ci-cd-pipeline/
 ├── .github/
 │   └── workflows/
-│       └── ci-cd.yml
+│       └── main.yml
 ├── frontend/
 │   ├── Dockerfile
 │   ├── index.html
 │   └── nginx.conf
-└── backend/
-    ├── Dockerfile
-    ├── app.py
-    └── requirements.txt
-
-
-
-
+├── backend/
+│   ├── Dockerfile
+│   ├── app.py
+│   └── requirements.txt
+└── README.md
+```
 
 ---
 
