@@ -7,6 +7,8 @@ It includes a **frontend (NGINX)** server for user input and a **backend (Flask 
 
 The goal was to understand real-world deployment workflows, automation, and containerized microservice communication between cloud VMs.
 
+![overview](img/projectVMVM.jpg)
+
 ---
 
 ## VM creation 
