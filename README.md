@@ -13,8 +13,8 @@ The goal was to understand real-world deployment workflows, automation, and cont
 
 Using azure cloud create two instances 
 
-![VM1 Creation](img/VM1.jpg)
-![VM2 Creation](img/VM2.png)
+![VM1 Creation](img/VM1.svg)
+![VM2 Creation](img/VM2.svg)
 
 ## Files structure
 
@@ -93,7 +93,7 @@ The pipeline performs the following automated tasks:
      * `DOCKERHUB_TOKEN`
 
 These secrets you can get in your docker hub 
-![docker](img/dockervar.png)
+![docker](img/dockervar.svg)
 
 
 3. **Deploy**
@@ -108,7 +108,7 @@ These secrets you can get in your docker hub
    * Pulls the latest Docker images and restarts the containers automatically.
 
 Because we have addded our secrets here
-![gitrepovars](img/gitrepovars.png)
+![gitrepovars](img/gitrepovars.svg)
 
 This provides **continuous integration and deployment** without manual intervention.
 Every push to the `main` branch redeploys both servers automatically.
@@ -165,15 +165,15 @@ This ensured all Docker configurations and pipeline scripts worked before cloud 
 
 * Automated **build → push → deploy** workflow using GitHub Actions.
 
-![insertform](img/deploystatus.png)
+![insertform](img/deploystatus.svg)
 
-![frontend](img/insertform.png)
+![frontend](img/insertform.svg)
 
-![backend](img/submitform.png)
+![backend](img/submitform.svg)
 
 After the form has been submitted you can check thought Backend VM instance
-![accessdata](img/accessdata.png)
-![accessdata2](img/accessdata2.png)
+![accessdata](img/accessdata.svg)
+![accessdata2](img/accessdata2.svg)
 
 * Functional two-tier web application with form submission and persistent storage.
 * Secure VM-based deployment using SSH key authentication.
