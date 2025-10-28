@@ -13,7 +13,7 @@ The goal was to understand real-world deployment workflows, automation, and cont
 
 Using azure cloud create two instances 
 
-![VM1 Creation](img/VM1.svg)
+![VM1 Creation](img/VM1.jpg)
 ![VM2 Creation](img/VM2.png)
 
 ## Files structure
