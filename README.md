@@ -9,6 +9,13 @@ The goal was to understand real-world deployment workflows, automation, and cont
 
 ---
 
+## VM creation 
+
+Using azure cloud create two instances 
+
+![VM1 Creation](img/VM1.png)
+![VM2 Creation](img/VM2.png)
+
 ## Files structure
 
 ```
@@ -85,6 +92,10 @@ The pipeline performs the following automated tasks:
      * `DOCKERHUB_USERNAME`
      * `DOCKERHUB_TOKEN`
 
+These secrets you can get in your docker hub 
+![docker](img/dockervar.png)
+
+
 3. **Deploy**
 
    * Connects to both Azure VMs using SSH via secrets:
@@ -95,6 +106,9 @@ The pipeline performs the following automated tasks:
      * `FRONTEND_HOST`
      * `BACKEND_HOST`
    * Pulls the latest Docker images and restarts the containers automatically.
+
+Because we have addded our secrets here
+![gitrepovars](img/gitrepovars.png)
 
 This provides **continuous integration and deployment** without manual intervention.
 Every push to the `main` branch redeploys both servers automatically.
@@ -150,7 +164,18 @@ This ensured all Docker configurations and pipeline scripts worked before cloud 
 ## Outcome
 
 * Automated **build → push → deploy** workflow using GitHub Actions.
-* Fully functional two-tier web application with form submission and persistent storage.
+
+![insertform](img/deploystatus.png)
+
+![frontend](img/insertform.png)
+
+![backend](img/submitform.png)
+
+After the form has been submitted you can check thought Backend VM instance
+![accessdata](img/accessdata.png)
+![accessdata2](img/accessdata2.png)
+
+* Functional two-tier web application with form submission and persistent storage.
 * Secure VM-based deployment using SSH key authentication.
 * Demonstrated real-world CI/CD pipeline principles and Docker-based scalability.
 
